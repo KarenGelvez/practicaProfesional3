@@ -1,5 +1,5 @@
 <?php
-    require 'config.php'
+    require 'config.php';
     
     $result = false;
     if(!empty($_POST)){
@@ -24,7 +24,7 @@
         ]);
         $row = $query->fetch(PDO::FETCH_ASSOC);
         $nameValue = $row['use_name'];
-        $emailValue = $row['use_email']
+        $emailValue = $row['use_email'];
     }
 ?>
 <html>
@@ -36,20 +36,17 @@
     <body>
         <div class="container">
             <h1>Actualizar Usuario</h1>
+            <hr>
             <a href="list.php">Regresar</a>
-            <?php
-                if($result) {
-                    echo '<div class="alert alert-success">¡Actualización Exitosa!</div>';
-                }
-            ?>
             <form action="update.php" method="post">
-                <label for="name">Nombre</label>
+                <input type="hidden" name="id" id="id" value="<?php echo $id;?>">
+                <label for="name">Nombre: </label>
                 <input type="text" name="name" id="name" value="<?php echo $nameValue;?>">
                 <br>
-                <label for="email">Correo Electrónico</label>
+                <label for="email">Correo Electrónico: </label>
                 <input type="text" name="email" id="email" value="<?php echo $emailValue;?>">
                 <br>
-                <input type="submit" value="Actualizar">
+                <input type="submit" value="Actualizar" class="btn btn-primary">
             </form>
         </div>
     </body>

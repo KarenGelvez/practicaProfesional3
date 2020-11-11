@@ -1,5 +1,5 @@
 <?php
-    require 'config.php'
+    require 'config.php';
     
     $result = false;
     if(!empty($_POST)){
@@ -24,6 +24,7 @@
     <body>
         <div class="container">
             <h1>Agregar Usuario</h1>
+            <hr>
             <a href="index.php">Principal</a>
             <?php
                 if($result) {
@@ -31,16 +32,17 @@
                 }
             ?>
             <form action="add.php" method="post">
-                <label for="name">Nombre</label>
+            
+                <label for="name">Nombre: </label>
                 <input type="text" name="name" id="name">
                 <br>
-                <label for="email">Correo Electrónico</label>
+                <label for="email">Correo Electrónico: </label>
                 <input type="text" name="email" id="email">
                 <br>
-                <label for="password">Contraseña</label>
-                <input type="text" name="password" id="password">
+                <label for="password">Contraseña: </label>
+                <input type="password" name="password" id="password">
                 <br>
-                <input type="submit" value="Guardar">
+                <input type="submit" value="Guardar" class="btn btn-primary">
             </form>
         </div>
     </body>

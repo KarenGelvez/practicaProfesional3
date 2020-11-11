@@ -1,5 +1,5 @@
 <?php
-    require 'config.php'
+    require 'config.php';
     
     $queryResult = $pdo->query("SELECT * FROM users");
 ?>
@@ -12,6 +12,7 @@
     <body>
         <div class="container">
             <h1>Listar Usuarios</h1>
+            <hr>
             <a href="index.php">Principal</a>
             <table class="table">
                 <tr>

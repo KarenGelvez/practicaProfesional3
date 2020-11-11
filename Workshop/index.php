@@ -10,6 +10,7 @@
     <body>
         <div class="container">
             <h1>Base de Datos MySQL</h1>
+            <hr>
             <ul>
                 <li>
                     <a href="list.php">Lista de Usuario</a>

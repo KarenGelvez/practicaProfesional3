@@ -1,8 +1,8 @@
 <?php
-    require 'config.php'
+    require 'config.php';
 
     $id = $_GET['id'];
-    $sql = "DELETE FROM user WHERE use_id=:use_id";
+    $sql = "DELETE FROM users WHERE use_id=:use_id";
     $query = $pdo->prepare($sql);
     $query->execute([
         'use_id'=>$id
