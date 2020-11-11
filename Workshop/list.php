@@ -12,7 +12,7 @@
     <body>
         <div class="container">
             <h1>Listar Usuarios</h1>
-            <a href="index2.php">Principal</a>
+            <a href="index.php">Principal</a>
             <table class="table">
                 <tr>
                     <th>Nombre</th>

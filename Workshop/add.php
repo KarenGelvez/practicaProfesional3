@@ -24,7 +24,7 @@
     <body>
         <div class="container">
             <h1>Agregar Usuario</h1>
-            <a href="index2.php">Principal</a>
+            <a href="index.php">Principal</a>
             <?php
                 if($result) {
                     echo '<div class="alert alert-success">¡Registro Exitoso!</div>';
